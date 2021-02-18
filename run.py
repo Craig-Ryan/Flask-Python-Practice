@@ -10,9 +10,9 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/about")
-def about():
-    return render_template("about.html")
+@app.route("/recipes")
+def recipes():
+    return render_template("recipes.html")
 
 
 @app.route("/contact")
@@ -20,9 +20,9 @@ def contact():
     return render_template("contact.html")
 
 
-@app.route("/careers")
-def careers():
-    return render_template("careers.html")
+@app.route("/blank")
+def blank():
+    return render_template("blank.html")
 
 
 if __name__ == "__main__":
