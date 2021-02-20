@@ -2,21 +2,21 @@
   {
     "name": "Banana Pancakes",
     "description": "Simple yet delicious, try these perfect lazy-morning pancakes!",
-    "image_source": "https://img.taste.com.au/L_9PA2m8/taste/2019/07/3-ingredient-banana-pancakes-151444-1.jpg"
+    "image_source": "static/images/bp.jpg"
   },
   {
     "name": "Pad Thai",
     "description": "Easy to make and great-tasting vegan Pad Thai",
-    "image_source": "https://choosingchia.com/jessh-jessh/uploads/2019/03/favorite-vegan-pad-Thai-3.jpg"
+    "image_source": "static/images/pt.jpg"
   },
   {
-    "name": "Oatmeal Energy Balls",
+    "name": "'No-Bake' Oatmeal Energy Balls",
     "description": "Want something that's both delicious and healthy? You're in for a treat!",
-    "image_source": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQz41o6YmNbCgWSlK2GPNG3D6CmMVI3X81YQ&usqp=CAU"
+    "image_source": "static/images/ob.png"
   },
   {
     "name": "Green Detox Smoothie",
     "description": "Show your body some love with this cleansing, sweet-tasting and nutrient rich smoothie",
-    "image_source": "https://jessicainthekitchen.com/wp-content/uploads/2021/01/Best-Green-Smoothie-4-scaled.jpg"
+    "image_source": "static/images/gs.jpg"
   }
 ]

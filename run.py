@@ -13,11 +13,11 @@ def index():
 
 @app.route("/recipes")
 def recipes():
-  data = []
-  with open("data/recipes.json", "r") as json_data:
-    data = json.load(json_data)
-    return render_template(
-      "recipes.html", page_title="All Recipes", recipes=data)
+    data = []
+    with open("data/recipes.json", "r") as json_data:
+        data = json.load(json_data)
+        return render_template(
+          "recipes.html", page_title="All Recipes", recipes=data)
 
 
 @app.route("/contact")
