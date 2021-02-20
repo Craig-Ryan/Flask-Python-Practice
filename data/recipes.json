@@ -2,21 +2,25 @@
   {
     "name": "Banana Pancakes",
     "description": "Simple yet delicious, try these perfect lazy-morning pancakes!",
-    "image_source": "static/images/bp.jpg"
+    "image_source": "static/images/bp.jpg",
+    "url": "banana-pancakes"
   },
   {
     "name": "Pad Thai",
     "description": "Easy to make and great-tasting vegan Pad Thai",
-    "image_source": "static/images/pt.jpg"
+    "image_source": "static/images/pt.jpg",
+    "url": "pad-thai"
   },
   {
     "name": "'No-Bake' Oatmeal Energy Balls",
     "description": "Want something that's both delicious and healthy? You're in for a treat!",
-    "image_source": "static/images/ob.png"
+    "image_source": "static/images/ob.png",
+    "url": "oatmeal-balls"
   },
   {
     "name": "Green Detox Smoothie",
     "description": "Show your body some love with this cleansing, sweet-tasting and nutrient rich smoothie",
-    "image_source": "static/images/gs.jpg"
+    "image_source": "static/images/gs.jpg",
+    "url": "green-smoothie"
   }
 ]

@@ -20,6 +20,17 @@ def recipes():
           "recipes.html", page_title="All Recipes", recipes=data)
 
 
+@app.route("/recipes/<recipe_image_source>")
+def recipes_recipe(recipe_image_source):
+    recipe = {}
+    with open("data/recipes.json", "r") as json_data:
+        data = json.load(json_data)
+        for obj in data:
+            if obj["url"] == recipe_image_source:
+                recipe = obj
+    return render_template("method.html", method=recipe)
+
+
 @app.route("/contact")
 def contact():
     return render_template("contact.html", page_title="Contact")
