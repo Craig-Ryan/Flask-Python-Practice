@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Necessary link to the CSS file in the vendor folder to load styling-->
-  <link rel="stylesheet" href=" {{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" type="text/css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" type="text/css">
 
   <!--Reference the CSS file from static folder-->
-  <link rel="stylesheet" href=" {{ url_for('static', filename='css/clean-blog.min.css') }}" type="text/css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/clean-blog.min.css') }}" type="text/css">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
   <title>Flask Practice</title>
 </head>

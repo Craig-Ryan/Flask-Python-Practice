@@ -6,30 +6,36 @@
     {% endfor %}
     <h2>{{ page_title }}</h2> -->
 
-    {{ recipes[0]["description"] }}
+    <!-- {{ recipes[0]["description"] }} -->
 
     <p class="recipe">Choose from a broad range of recipes below</p>
 
-    <div class="container card-contaier recipe-card-container">
+      <div class="container card-contaier recipe-card-container">
       <div class="row">
+
+
+  {% for recipe in recipes %}
+
+    
         <div class="col sm-6 md-4 lg-3">
           <div class="card">
             <div class="card-image">
-              <a href="#"><img class="card-img-top"
-                  src="https://img.taste.com.au/L_9PA2m8/taste/2019/07/3-ingredient-banana-pancakes-151444-1.jpg"
+              <a href="#"><img class="card-img-top featurette-image image-responsive"
+                  src="{{ recipe.image_source }}"
                   alt="Banana Pancakes Image"></a>
                 <div class="row card-body">
                   <div class="col s12">
-                  <p class="card-title text-align-left">Banana Pancakes</p>
-                  <p class="card-text">Simple yet delicious, try these perfect lazy-morning pancakes!</p>
-                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <h5>{{ recipe.name }}</h5>
+                    <p class="card-text">{{ recipe.description }}</p>
                   </div>
               </div>
             </div>
           </div>
         </div>
+
+  {% endfor %}
+        
       </div>
     </div>
-
     
 {% endblock %}
