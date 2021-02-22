@@ -20,15 +20,16 @@ def recipes():
           "recipes.html", page_title="All Recipes", recipes=data)
 
 
-@app.route("/recipes/<recipe_image_source>")
-def recipes_recipe(recipe_image_source):
+@app.route("/recipes/<recipe_name>")
+def recipes_recipe(recipe_name):
     recipe = {}
     with open("data/recipes.json", "r") as json_data:
         data = json.load(json_data)
         for obj in data:
-            if obj["url"] == recipe_image_source:
+            if obj["url"] == recipe_name:
                 recipe = obj
-    return render_template("method.html", method=recipe)
+    #return "<h1>" + recipe["name"]
+    return render_template("instructions.html", recipe=recipe)
 
 
 @app.route("/contact")
