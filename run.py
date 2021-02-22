@@ -1,9 +1,16 @@
 import os
 import json
-from flask import Flask, render_template
+from flask import Flask, render_template, request, flash
+# Flashed messages stay on screen until refreshed.
+# After entering data into contact form to show success.
+# Create SECRET_KEY
+if os.path.exists("env.py"):
+    import env
 
 
 app = Flask(__name__)  # creates instance of class, stores imported classes ^
+app.secret_key = os.environ.get("SECRET_KEY")
+# add flash message below contact request.method
 
 
 @app.route("/")  # all functions are objects so can be passed around @
@@ -28,12 +35,16 @@ def recipes_recipe(recipe_name):
         for obj in data:
             if obj["url"] == recipe_name:
                 recipe = obj
-    #return "<h1>" + recipe["name"]
     return render_template("instructions.html", recipe=recipe)
 
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
+# Flask needs to be explicitly told to accept POST method
 def contact():
+    if request.method == "POST":
+        # flashed message
+        flash("Your message has been received. Thank you, {}.".format(
+          request.form.get("name")))
     return render_template("contact.html", page_title="Contact")
 
 
